@@ -1,4 +1,4 @@
-Para visualizar meu currículo, clique aqui [https://html-preview.github.io/?url=https://github.com/geovanevitor/geovanevitor/blob/main/index.html]
+Para visualizar meu currículo, clique [AQUI](https://html-preview.github.io/?url=https://github.com/geovanevitor/geovanevitor/blob/main/index.html)
 
 <h1 style="display: flex; align-items: center;">
   Template de currículo com HTML, CSS e JavaScript
