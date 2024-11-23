@@ -1,3 +1,5 @@
+Para visualizar meu currículo, clique aqui [https://html-preview.github.io/?url=https://github.com/geovanevitor/geovanevitor/blob/main/index.html]
+
 <h1 style="display: flex; align-items: center;">
   Template de currículo com HTML, CSS e JavaScript
 </h1>
@@ -8,3 +10,4 @@ Este é um modelo de currículo com um modo noturno incorporado, desenvolvido ut
     <img src="https://drive.usercontent.google.com/download?id=1vMJnyeH3y7-M-pUF9l4DIUgGWrc5OOZp" width="400"  alt="Imagem 1">
     <img src="https://drive.usercontent.google.com/download?id=15U7-OOR6a446wEFztxJPeIKlxbYWdOwF" width="400" alt="Imagem 2">
 </div>
+
