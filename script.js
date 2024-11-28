@@ -1,17 +1,20 @@
-let trilho = document.getElementById('trilho')
-let body = document.querySelector('body')
-let icone = document.getElementById('icone');
-
-trilho.addEventListener('click', () => {
-    trilho.classList.toggle('dark')
-    body.classList.toggle('dark')
-
-    if (body.classList.contains('dark')) {
-        icone.classList.remove('bi-brightness-high-fill');
-        icone.classList.add('bi-moon-fill');
-    } else {
-        icone.classList.remove('bi-moon-fill');
-        icone.classList.add('bi-brightness-high-fill');
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    // Esconde todos os conteúdos das abas
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
     }
 
-})
+    // Remove a classe ativa de todas as abas
+    tablinks = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+
+    // Exibe a aba correspondente ao clicar
+    document.getElementById(tabName).classList.add("active");
+
+    // Adiciona a classe ativa ao botão da aba clicada
+    evt.currentTarget.classList.add("active");
+}
