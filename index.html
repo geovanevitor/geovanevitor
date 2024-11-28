@@ -1,66 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curriculo</title>
+    <title>Currículo de Geovane Vitor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .left_side {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile_text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .img_bx img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .profile_text h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .profile_text h3 {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .contact_info {
+            margin-top: 30px;
+        }
+
+        .contact_info h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact_info ul {
+            list-style: none;
+        }
+
+        .contact_info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact_info .icon {
+            margin-right: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .tabs button {
+            padding: 8px;
+            background-color: #e1e1e1;
+            border: none;
+            cursor: pointer;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        .tabs button.active {
+            background-color: #ccc;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            padding: 20px;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .progress-bar div {
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .skills .box {
+            margin-bottom: 15px;
+        }
+
+        .skills h4 {
+            margin-bottom: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .left_side {
+                padding: 15px;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tabs button {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            .profile_text h2 {
+                font-size: 20px;
+            }
+
+            .profile_text h3 {
+                font-size: 16px;
+            }
+
+            .contact_info h4 {
+                font-size: 18px;
+            }
+
+            .contact_info ul {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tabs {
+                padding: 8px;
+            }
+
+            .tabs button {
+                font-size: 10px;
+                padding: 8px;
+            }
+
+            .profile_text h2 {
+                font-size: 18px;
+            }
+
+            .profile_text h3 {
+                font-size: 14px;
+            }
+
+            .contact_info h4 {
+                font-size: 16px;
+            }
+
+            .skills .box {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="left_side">
             <div class="profile_text">
                 <div class="img_bx">
-                    <!-- Substitua a imagem profile.png na pasta img e altere src para "img/NOME_DA_SUA_IMAGEM_COM_EXTENSÃO" -->
-                    <img src="terra.png">
+                    <img src="terra.png" alt="Geovane Vitor">
                 </div>
-                 <!-- Substitua Clarinha por seu nome e "Data Scientist | Data Analyst | Data Engineer" pelos seus cargos/títulos -->
-                <h2>Geovane Vitor<br><span>Ciência da Computação</span></h2>
+                <h2>Geovane Vitor</h2>
+                <h3>Ciência da Computação</h3>
             </div>
 
             <div class="contact_info">
-                <h3 class="title">Informações de Contato</h3>
+                <h4>Siga-me:</h4>
                 <ul>
                     <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <!-- Substitua por seu DDI (código DDI do Brasil é 55), DDD e número de celular -->
-                        <span class="text">+55 27 99278-6167</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <!-- Substitua por seu email -->
-                        <span class="text">geovitor1@gmail.com</span>
-                    </li>
-                    <li>
                         <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-                        <!-- Coloque o link do seu linkedin em href e substitua "linkedin.com/in/clarinha/" pelo seu link sem https:// -->
-                        <a href="" target="_blank"><span class="text">linkedin.com/in/geovanevitor/</span></a>
+                        <a href="https://linkedin.com/in/geovanevitor/" target="_blank"><span class="text">linkedin.com/in/geovanevitor/</span></a>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <!-- Coloque o link do seu github em href e substitua "github.com/clarinha" pelo seu link sem https:// -->
-                        <a href="" target="_blank"><span class="text">github.com/geovanevitor</span></a>
+                        <a href="https://github.com/geovanevitor" target="_blank"><span class="text">github.com/geovanevitor</span></a>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <!-- Substitua pelo estado e país na qual vive -->
                         <span class="text">Vitória/ES, Brasil</span>
                     </li>
                 </ul>
             </div>
 
-            <div class="contact_info education">
-                <h3 class="title">Formação</h3>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'sobre')">Sobre Mim</button>
+                <button class="tab-link" onclick="openTab(event, 'experiencia')">Experiência</button>
+                <button class="tab-link" onclick="openTab(event, 'formacao')">Formação</button>
+                <button class="tab-link" onclick="openTab(event, 'idiomas')">Idiomas</button>
+                <button class="tab-link" onclick="openTab(event, 'habilidades')">Habilidades</button>
+                <button class="tab-link" onclick="openTab(event, 'contato')">Contato</button>
+            </div>
+
+            <div id="sobre" class="tab-content active">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Geovane Vitor e sou apaixonado por análise de dados. Desde que me lembro, sempre fui fascinado pela forma como números e informações podem contar histórias e revelar padrões ocultos. Como profissional na área de análise de dados, tenho o privilégio de mergulhar fundo nesse mundo todos os dias, desvendando insights valiosos e ajudando a tomar decisões informadas.</p>
+            </div>
+
+            <div id="experiencia" class="tab-content">
+                <h2>Experiência Profissional</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2017 - Atual</h5>
+                        <h5>ECT</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Ger. Comercial</h4>
+                        <p>Minha responsabilidade principal é cuidar da Padronização do Processo Produtivo, analisando situações e promovendo soluções, visando a prevenção de falhas operacionais, além de auxiliar na estratégia da empresa e garantir que os objetivos sejam alcançados de forma eficaz e eficiente.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2014 - 2015</h5>
+                        <h5>Chocolates Garoto</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Produção/Indústria</h4>
+                        <p>Minha principal função era a fabricação de chocolate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="formacao" class="tab-content">
+                <h2>Formação</h2>
                 <ul>
                     <li>
-                        <!-- Substitua pelo ano de ingresso e conclusão de curso (se estiver cursando, coloque Atual ou o ano esperado para a formação) -->
                         <h5>2013 - 2018</h5>
                         <h4>Graduação em Administração de Empresas</h4>
                         <h4>Faculdade Estácio</h4>
                     </li>
-                    <!-- Se precisar adicionar mais formações só copiar o trecho <li>...</li> e colar logo abaixo. Veja o exemplo-->
                     <li>
                         <h5>2024 - cursando</h5>
                         <h4>Graduação em Ciência da Computação</h4>
@@ -69,148 +278,83 @@
                 </ul>
             </div>
 
-            <div class="contact_info language">
-                <h3 class="title">Idiomas</h3>
+            <div id="idiomas" class="tab-content">
+                <h2>Idiomas</h2>
                 <ul>
                     <li>
-                        <!-- Substitua "Português" pelo idioma que você quer -->
                         <span class="text">Português</span>
-                        <span class="percent">
-                            <!-- Altera a porcentagem de acordo com a sua proeficiência no idioma acima -->
-                            <div style="width: 100%;"></div>
-                        </span>
+                        <div class="progress-bar"><div style="width: 100%; background-color: #4CAF50;"></div></div>
                     </li>
-                    <!-- Se precisar adicionar mais idiomas só copiar o trecho <li>...</li> e colar logo abaixo. Veja o exemplo -->
                     <li>
-                        <!-- Substitua "Inglês" pelo idioma que você quer -->
                         <span class="text">Inglês</span>
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência no idioma acima -->
-                        <span class="percent">
-                            <div style="width: 75%;"></div>
-                        </span>
+                        <div class="progress-bar"><div style="width: 75%; background-color: #2196F3;"></div></div>
                     </li>
                     <li>
-                        <!-- Substitua "Espanhol" pelo idioma que você quer -->
                         <span class="text">Espanhol</span>
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência no idioma acima -->
-                        <span class="percent">
-                            <div style="width: 15%;"></div>
-                        </span>
+                        <div class="progress-bar"><div style="width: 10%; background-color: #FF9800;"></div></div>
                     </li>
-                    <!-- Se precisar remover algum idioma só deletar o trecho <li>...</li> em que o idioma está inserido -->
                 </ul>
             </div>
 
-        </div>
-        <div class="right_side">
-            <div class="light-dark-mode">
-                <div class="trilho" id="trilho">
-                    <div class="indicador">
-                        <i class="bi bi-brightness-high-fill" id="icone"></i>
-                        <!-- <i class="bi bi-moon-fill"></i> -->
+            <div id="habilidades" class="tab-content">
+                <h2>Habilidades</h2>
+                <div class="skills">
+                    <div class="box">
+                        <h4>Python</h4>
+                        <div class="progress-bar"><div style="width: 4%; background-color: #4CAF50;"></div></div>
+                    </div>
+                    <div class="box">
+                        <h4>SQL</h4>
+                        <div class="progress-bar"><div style="width: 15%; background-color: #2196F3;"></div></div>
+                    </div>
+                    <div class="box">
+                        <h4>C++</h4>
+                        <div class="progress-bar"><div style="width: 4%; background-color: #FF9800;"></div></div>
+                    </div>
+                    <div class="box">
+                        <h4>AWS</h4>
+                        <div class="progress-bar"><div style="width: 10%; background-color: #9E9E9E;"></div></div>
+                    </div>
+                    <div class="box">
+                        <h4>HTML</h4>
+                        <div class="progress-bar"><div style="width: 80%; background-color: #FF5722;"></div></div>
+                    </div>
+                    <div class="box">
+                        <h4>C</h4>
+                        <div class="progress-bar"><div style="width: 40%; background-color: #8BC34A;"></div></div>
                     </div>
                 </div>
             </div>
-            <script src="script.js"></script>
-            <div class="about">
-                <h2 class="title2">Sobre</h2>
-                <!-- Substitua a apresentação da clarinha pela sua, contando um pouco sobre você e sua jornada -->
-                <p>Olá! Meu nome é Geovane Vitor e sou apaixonado por análise de dados.
-                    <!-- Use <br><br> para pular linhas -->
-                    <br><br>Desde que me lembro, sempre fui fascinado pela forma como números e informações podem contar histórias e revelar padrões ocultos.
-                    <br><br>Como profissional na área de análise de dados, tenho o privilégio de mergulhar fundo nesse mundo todos os dias, desvendando insights valiosos e ajudando a tomar decisões informadas. 
-                </div>
-            <div class="about">
-                <h2 class="title2">Experiência</h2>
-                <div class="box">
-                    <div class="year_company">
-                        <!-- Substitua pelo ano de ingresso e de saída da empresa (se for seu emprego atual, coloque Atual) -->
-                        <h5>2017 - Atual</h5>
-                        <h5>ECT</h5>
-                    </div>
-                    <div class="text">
-                        <!-- Substitua pelo seu cargo -->
-                        <h4>Ger. Comercial</h4>
-                        <!-- Descreva suas funções para o cargo mencionado -->
-                        <p>
-                            Minha responsabilidade principal é cuidar da Padronização do Processo Produtivo, analisando situações e promovendo soluções, visando a prevenção de falhas operacionais, além de auxiliar na estratégia da empresa e garantir que os objetivos sejam alcançados de forma eficaz e eficiente. 
-                        </p>
-                    </div>
-                </div>
-                <!-- Se precisar adicionar mais experiências só copiar o trecho <div class="box">...</div> e colar abaixo. Veja o exemplo -->
-                <div class="box">
-                    <div class="year_company">
-                        <!-- Substitua pelo ano de ingresso e de saída da empresa (se for seu emprego atual, coloque Atual) -->
-                        <h5>2014 - 2015</h5>
-                        <h5>Chocolates Garoto</h5>
-                    </div>
-                    <div class="text">
-                        <!-- Substitua pelo seu cargo -->
-                        <h4>Produção/Indústria</h4>
-                        <!-- Descreva suas funções para o cargo mencionado -->
-                        <p>
-                            Minha principal função era a fabricação de chocolate. 
-                        </p>
-                    </div>
-                </div>
-                <!-- Se precisar remover alguma experiência só deletar o trecho <div class="box">...</div> em que a experiência está inserida -->
-            </div>
 
-            <div class="about skills">
-                <h2 class="title2">Habilidades Profissionais</h2>
-                <div class="box">
-                    <!-- Substitua "Python" pela habilidade que você quiser -->
-                    <h4>Python</h4>
-                    <div class="percent">
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência na habilidade acima  -->
-                        <div style="width: 6%;"></div>
-                    </div>
-                </div>
-                <!-- Se precisar adicionar mais habilidades só copiar o trecho <div class="box">...</div> e colar abaixo. Veja o exemplo -->
-                <div class="box">
-                    <!-- Substitua "Python" pela habilidade que você quiser -->
-                    <h4>SQL</h4>
-                    <div class="percent">
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência na habilidade acima  -->
-                        <div style="width: 3%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <!-- Substitua "Python" pela habilidade que você quiser -->
-                    <h4>C++</h4>
-                    <div class="percent">
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência na habilidade acima  -->
-                        <div style="width: 2%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <!-- Substitua "Python" pela habilidade que você quiser -->
-                    <h4>AWS</h4>
-                    <div class="percent">
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência na habilidade acima  -->
-                        <div style="width: 0%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <!-- Substitua "Python" pela habilidade que você quiser -->
-                    <h4>HTML</h4>
-                    <div class="percent">
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência na habilidade acima  -->
-                        <div style="width: 45%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <!-- Substitua "Python" pela habilidade que você quiser -->
-                    <h4>C</h4>
-                    <div class="percent">
-                        <!-- Altera a porcentagem de acordo com a sua proeficiência na habilidade acima  -->
-                        <div style="width: 20%;"></div> 
-                      </div>
-                </div>
-
-                <!-- Se precisar remover alguma habilidade só deletar o trecho <div class="box">...</div> em que a habilidade está inserida -->
+            <div id="contato" class="tab-content">
+                <h2>Contato</h2>
+                <p>Você pode entrar em contato comigo através dos seguintes canais:</p>
+                <ul>
+                    <li>Email: geovitor1@gmail.com</li>
+                    <li>Telefone: +55 27 99278-6167</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/geovanevitor/" target="_blank">linkedin.com/in/geovanevitor/</a></li>
+                    <li>GitHub: <a href="https://github.com/geovanevitor" target="_blank">github.com/geovanevitor</a></li>
+                </ul>
             </div>
         </div>
     </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 </html>
